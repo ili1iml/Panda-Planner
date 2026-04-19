@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Panda Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="planner-card">
+        <header>
+            <div class="controls">
+                <button class="btn-nav" onclick="changeMonth(-1)">السابق</button>
+                <h1 id="month-year-display">Month Year</h1>
+                <button class="btn-nav" onclick="changeMonth(1)">التالي</button>
+            <img src="panda.png" class="logo">  
+
+            </div>
+            
+        </header>
+
+        <div class="calendar-grid" id="calendar-grid">
+            </div>
+
+        <div class="bottom-sections">
+            <div class="box">
+                <strong>Notes:</strong>
+                <textarea rows="5" id="general-notes" placeholder="اكتب ملاحظاتك هنا..."></textarea>
+            </div>
+            <div class="box">
+                <strong>To Do List:</strong>
+                <textarea rows="5" id="todo-list" placeholder="• مهمة 1&#10;• مهمة 2"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
